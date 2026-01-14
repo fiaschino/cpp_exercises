@@ -1,0 +1,17 @@
+# Compiled binaries
+a.out
+*.out
+*.exe
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Build directories
+build/
+cmake-build*/
+
+# IDE / OS noise
+.vscode/
+.DS_Store
