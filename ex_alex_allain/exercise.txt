@@ -1,0 +1,2 @@
+ex_1: print hello world
+ex_2: showcase input and output and differences between integer and 
