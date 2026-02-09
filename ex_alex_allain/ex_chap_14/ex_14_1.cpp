@@ -37,6 +37,8 @@ int main(){
         std::cout << std::endl;
     }
 
+
+    // Free the heap by deleting pointers. In this way memory leak is avoided
     for (int i = 0; i < n; i++) {
         delete[] p_p_n[i];
     }
