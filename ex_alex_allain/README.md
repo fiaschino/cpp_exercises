@@ -9,7 +9,6 @@ In the first 9 chapters there is an introduction to basic concept and C++ syntax
 Starting chapter 10 the book dives deep more into working with Data.
 Finally, from chapter 21, there are some explanation in how to write larger programs. 
 
-
 Here is a list of all the exercises present in this directory:
     - ex_chap_1: print helloworld
     - ex_chap_2: showcase input and output and differences between integer and floating point operations
