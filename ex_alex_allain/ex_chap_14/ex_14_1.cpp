@@ -4,7 +4,7 @@
 int main(){
 
     int n; 
-    int** p_p_n; // initializing the pointer to pointer
+    int** p_p_n; // initializing (declaring) the pointer to pointer
     std::cout << "please insert a number so you can get a multiplicaiton table: \n";
     std::cin >> n;
     p_p_n = new int* [n]; // setting the pointer to pointer as a new space in the heap that contains address to a pointer
