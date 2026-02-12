@@ -2,19 +2,19 @@
 
 int main(){
 
-    int*** p_p_n;
+    int*** p_p_p_n;
     int L, W, H;
     std::cout << "please write three integer numbers that represent the sizes" << std::endl;
     std::cin >> L;
     std::cin >> W;
     std::cin >> H;
-    p_p_n = new int** [L];
+    p_p_p_n = new int** [L];
 
     //now make each pointer store the address to a pointer of pointers (to a 2D matrix)
 
     for (int i = 0; i < L; i++){
 
-        p_p_n [i] = new int*[W];
+        p_p_p_n [i] = new int*[W];
         
     }
 
@@ -24,7 +24,7 @@ int main(){
 
         for (int j = 0; j < W; j++){ // this for loop could also be 
 
-            p_p_n [i][j] = new int[H];
+            p_p_p_n [i][j] = new int[H];
 
         }
 
@@ -36,7 +36,7 @@ int main(){
 
             for (int k = 0; k < H; k++){
 
-            p_p_n[i][j][k] = (i + 1) * (j + 1) * (k + 1);
+            p_p_p_n[i][j][k] = (i + 1) * (j + 1) * (k + 1);
 
             }
         }
@@ -48,7 +48,7 @@ int main(){
 
             for (int k = 0; k < H; k++){
 
-                std::cout << p_p_n[i][j][k] << " ";
+                std::cout << p_p_p_n[i][j][k] << " ";
             
             }
 
@@ -65,15 +65,15 @@ int main(){
 
         for (int j = 0; j < W; j++){
 
-            delete [] p_p_n[i][j];
+            delete [] p_p_p_n[i][j];
         
         }
 
-        delete[] p_p_n[i];
+        delete[] p_p_p_n[i];
 
     }
     
-    delete [] p_p_n;
+    delete [] p_p_p_n;
 
 
 }
